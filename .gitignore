@@ -1,0 +1,5 @@
+node_modules/
+.vscode/
+
+# ignore inputs
+problems/day*/input.txt
