@@ -1,4 +1,4 @@
-// input url https://adventofcode.com/2020/day/5/input
+// input url https://adventofcode.com/2020/day/6/input
 import fs from 'fs';
 import path from 'path';
 
