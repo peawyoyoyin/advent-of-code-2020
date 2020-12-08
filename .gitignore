@@ -3,3 +3,6 @@ node_modules/
 
 # ignore inputs
 problems/day*/input.txt
+
+# normally if I do console.logs with long outputs I pipe to a file name "out". It does not have to exist
+out
