@@ -4,7 +4,6 @@ import { instructions } from "./inputs";
 function applyMask(mask: string, num: number) {
     const numAsBinary = num.toString(2).padStart(36, '0');
     
-    let Xcount = 0;
     let result: string[] = [];
     for (let i = 0; i < 36; i++) {
         switch (mask[i]) {
@@ -15,7 +14,6 @@ function applyMask(mask: string, num: number) {
                 result.push('0');
                 break;
             case 'X':
-                Xcount++;
                 result.push(numAsBinary[i]);
                 break;
         }
