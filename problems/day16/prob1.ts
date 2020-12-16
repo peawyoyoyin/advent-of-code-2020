@@ -5,7 +5,7 @@ import { inputs, Inputs } from "./inputs";
 function solve(inputs: Inputs) {
     const allValidRanges = inputs.fields.flatMap(field => field.validRanges);
 
-    const inSomeValidRange = (value: number) => allValidRanges.reduce((acc, range) => acc || inRange(value, range), false);
+    const inSomeValidRange = (value: number) => allValidRanges.some(range => inRange(value, range));
 
     const ticketScanningErrorRate = inputs.nearbyTickets.flat().reduce((acc, val) => {
         if (!inSomeValidRange(val)) {
